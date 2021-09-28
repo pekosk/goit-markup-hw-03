@@ -333,3 +333,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+.work-info {
+  border: 1px solid #EEEEEE;
+  margin-top: -4px;
+}
+
