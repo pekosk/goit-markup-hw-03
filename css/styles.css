@@ -21,9 +21,9 @@
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
   --adress-color: rgba(255, 255, 255, 0.6);
-  --accent-secondary-color: #188CE8;
+  --accent-secondary-color: #188ce8;
   --work-list-set-gap: 30px;
-  --header-border-color: #ECECEC;
+  --header-border-color: #ececec;
 }
 
 body {
@@ -179,7 +179,7 @@ body {
 .hero .button {
   background-color: var(--accent-colour);
   color: var(--primary-white-color);
-  
+
   margin-bottom: 200px;
 
   border: 0px;
@@ -315,27 +315,20 @@ body {
 
 /* ======END PORTFOLIO BUTTON====== */
 
-
-/* ======PORTFOLIO BUTTON====== */
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* ======PORTFOLIO WORKS====== */
 .work-list {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-  margin-top: calc( -1 * var(--work-list-set-gap));
-  margin-left: calc( -1 * var(--work-list-set-gap));
+  margin-top: calc(-1 * var(--work-list-set-gap));
+  margin-left: calc(-1 * var(--work-list-set-gap));
   display: flex;
   flex-wrap: wrap;
 
   list-style-type: none;
 }
 
-.section {
+.section-works {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -360,7 +353,7 @@ body {
 
 .work-list .text {
   color: var(--secondary-text-color);
-  
+
   margin: 20px 24px;
 
   font-family: Roboto;
@@ -370,7 +363,7 @@ body {
 }
 
 .work-info {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   margin-top: -4px;
 }
-
+/* ======END PORTFOLIO WORKS====== */
