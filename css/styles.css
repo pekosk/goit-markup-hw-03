@@ -23,6 +23,7 @@
   --adress-color: rgba(255, 255, 255, 0.6);
   --accent-secondary-color: #188CE8;
   --work-list-set-gap: 30px;
+  --header-border-color: #ECECEC;
 }
 
 body {
@@ -40,6 +41,8 @@ body {
 
 .header {
   background-color: var(--primary-white-color);
+
+  border-bottom: 1px solid var(--header-border-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -155,6 +158,10 @@ body {
 .adress-list .link:hover,
 .adress-list .link:focus {
   color: var(--accent-colour);
+}
+
+.hero {
+  background-color: #2f303a;
 }
 
 .hero .tittle {
@@ -296,12 +303,16 @@ body {
   padding-right: 15px;
   margin: auto;
   margin-top: calc( -1 * var(--work-list-set-gap));
-  margin-bottom: 94px;
   margin-left: calc( -1 * var(--work-list-set-gap));
   display: flex;
   flex-wrap: wrap;
 
   list-style-type: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .work-list .item {
