@@ -21,6 +21,7 @@
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
   --adress-color: rgba(255, 255, 255, 0.6);
+  --accent-secondary-color: #188CE8;
 }
 
 body {
@@ -39,14 +40,18 @@ body {
 .header {
   background-color: var(--primary-white-color);
 
-  height: 80px;
-  outline: 2px solid;
-  display: flex;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .accent {
@@ -56,7 +61,6 @@ body {
 .logo {
   color: var(--primary-black-color);
 
-  outline: 2px solid;
   text-decoration: none;
 
   font-family: Raleway;
@@ -177,6 +181,12 @@ body {
   letter-spacing: 0.06em;
 }
 
+.hero .button:hover,
+.hero .button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-secondary-color);
+}
+
 .section-pros .tittle {
   font-weight: 700;
   font-size: 14px;
@@ -234,13 +244,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* ======PORTFOLIO BUTTON====== */
+
 .button-list {
+  display: flex;
+  justify-content: center;
+
   list-style-type: none;
 }
 
 .button-list .button {
   color: var(--primary-text-color);
   background-color: var(--secondary-bgc);
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 0px;
 
   cursor: pointer;
 
@@ -258,8 +279,25 @@ body {
   color: var(--primary-white-color);
 }
 
+/* ======END PORTFOLIO BUTTON====== */
+
+
+/* ======PORTFOLIO BUTTON====== */
+.work-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .work-list {
+  display: flex;
+  flex-wrap: wrap;
+
   list-style-type: none;
+}
+
+.work-list .item {
+  flex-basis: calc(100% / 3);
 }
 
 .work-list .tittle {
