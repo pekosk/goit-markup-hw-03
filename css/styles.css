@@ -62,6 +62,13 @@ img {
   margin-right: auto;
 }
 
+.container.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .accent {
   color: var(--accent-colour);
 }
@@ -88,13 +95,26 @@ img {
   color: var(--accent-colour);
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
+  display: flex;
   padding-left: 0;
+  margin-left: 93px;
 
   list-style-type: none;
 }
 
+.nav-item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .auth-nav {
+  display: flex;
+  margin-left: auto;
   padding-left: 0;
 
   list-style-type: none;
@@ -106,6 +126,8 @@ img {
 
 .auth-nav .link {
   color: var(--secondary-text-color);
+
+  margin-left: 50px;
 }
 
 .auth-nav .link:hover,
@@ -168,6 +190,10 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.adress-item:first-child {
+  margin-bottom: 9px;
 }
 
 .adress-list .link:hover,
