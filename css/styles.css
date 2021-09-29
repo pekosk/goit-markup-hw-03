@@ -33,6 +33,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+}
+
 .link {
   color: var(--primary-text-color);
 
@@ -85,10 +89,14 @@ body {
 }
 
 .site-nav {
+  padding-left: 0;
+
   list-style-type: none;
 }
 
 .auth-nav {
+  padding-left: 0;
+
   list-style-type: none;
 }
 
@@ -107,6 +115,8 @@ body {
 
 .footer {
   background-color: var(--footer-bgc);
+
+  padding-top: 60px
 }
 
 .footer .logo {
@@ -126,8 +136,15 @@ body {
   color: var(--accent-colour);
 }
 
+.adress {
+  margin-top: 20px;
+}
+
 .adress .text {
   color: var(--primary-white-color);
+
+  margin-top: 0;
+  margin-bottom: 9px;
 
   font-style: normal;
   font-weight: 400;
@@ -137,6 +154,9 @@ body {
 }
 
 .adress-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
@@ -160,7 +180,7 @@ body {
   text-align: center;
 }
 
-.hero .tittle {
+.hero .title {
   color: var(--primary-white-color);
 
   margin-top: 0;
@@ -217,7 +237,7 @@ body {
   flex-basis: calc(100% / 3 - var(--work-list-set-gap));
 }
 
-.section-pros .tittle {
+.section-pros .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -233,7 +253,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section-job .tittle {
+.section-job .title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -250,7 +270,7 @@ body {
   background-color: var(--secondary-bgc);
 }
 
-.team-tittle {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -258,7 +278,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.team-list .tittle {
+.team-list .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -333,13 +353,17 @@ body {
   padding-bottom: 94px;
 }
 
+.title-works {
+  display: none;
+}
+
 .work-list .item {
   margin-top: var(--work-list-set-gap);
   margin-left: var(--work-list-set-gap);
   flex-basis: calc(100% / 3 - var(--work-list-set-gap));
 }
 
-.work-list .tittle {
+.work-list .title {
   color: var(--primary-text-color);
 
   margin: 20px 24px;
@@ -364,6 +388,5 @@ body {
 
 .work-info {
   border: 1px solid #eeeeee;
-  margin-top: -4px;
 }
 /* ======END PORTFOLIO WORKS====== */
