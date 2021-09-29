@@ -247,23 +247,22 @@ img {
   background-color: var(--accent-secondary-color);
 }
 
-.section-job {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.section-pros {
+  padding-top: 94px;
 }
 
-.section-job .list {
+.section-pros .list {
   display: flex;
-  margin-top: 50px;
-  margin-left: -30px;
 }
 
-.section-job .item-list {
-  margin-left: 30px;
-  flex-basis: calc(100% / 3 - var(--work-list-set-gap));
+.section-pros .list-item {
+  width: 270px;
 }
 
 .section-pros .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -277,6 +276,24 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+}
+
+.section-job {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-job .list {
+  display: flex;
+  margin-top: 50px;
+  margin-left: calc(-1 * var(--work-list-set-gap));
+}
+
+.section-job .item-list {
+  margin-left: var(--work-list-set-gap);
+  flex-basis: calc(100% / 3 - var(--work-list-set-gap));
 }
 
 .section-job .title {
@@ -284,6 +301,8 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  
+  margin-top: 0;
 }
 
 .list {
@@ -294,6 +313,9 @@ img {
 
 .section-team {
   background-color: var(--secondary-bgc);
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -302,6 +324,8 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 .team-list .title {
@@ -309,11 +333,23 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: var(--work-list-set-gap);
+  margin-bottom: 10px;
 }
 
 .team-list {
+  padding-left: 0;
   display: flex;
+  margin-left: calc(-1 * var(--work-list-set-gap));
+
   list-style-type: none;
+}
+
+.team-item {
+  flex-basis: (100% / 4 - var(--work-list-set-gap));
+  margin-left: var(--work-list-set-gap);
 }
 
 .team-list .text {
@@ -321,6 +357,10 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: var(--work-list-set-gap);
 }
 
 /* ======PORTFOLIO BUTTON====== */
@@ -379,8 +419,15 @@ img {
   padding-bottom: 94px;
 }
 
-.title-works {
-  display: none;
+.title.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .work-list .item {
