@@ -202,6 +202,9 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .title {
@@ -209,7 +212,6 @@ img {
 
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   font-weight: 900;
   font-size: 44px;
@@ -223,8 +225,6 @@ img {
 .hero .button {
   background-color: var(--accent-colour);
   color: var(--primary-white-color);
-
-  margin-bottom: 200px;
 
   border: 0px;
   border-radius: 4px;
