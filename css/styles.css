@@ -311,6 +311,8 @@ img {
   margin: 0;
 }
 
+/* ======TEAM====== */
+
 .section-team {
   background-color: var(--secondary-bgc);
 
@@ -325,6 +327,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -335,7 +338,6 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 
-  margin-top: var(--work-list-set-gap);
   margin-bottom: 10px;
 }
 
@@ -360,14 +362,25 @@ img {
   text-align: center;
 
   margin-top: 0;
-  margin-bottom: var(--work-list-set-gap);
 }
+
+.team-info {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  padding-top: var(--work-list-set-gap);
+  padding-bottom: var(--work-list-set-gap);
+  background-color: var(--primary-white-color);
+}
+
+/* ======TEAM END====== */
 
 /* ======PORTFOLIO BUTTON====== */
 
 .button-list {
   display: flex;
   justify-content: center;
+  margin-top: 0;
   margin-bottom: 34px;
 
   list-style-type: none;
@@ -402,9 +415,9 @@ img {
 /* ======END PORTFOLIO BUTTON====== */
 
 /* ======PORTFOLIO WORKS====== */
+
 .work-list {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
   margin: auto;
   margin-top: calc(-1 * var(--work-list-set-gap));
   margin-left: calc(-1 * var(--work-list-set-gap));
