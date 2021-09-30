@@ -333,12 +333,15 @@ img {
 }
 
 .job-list {
-  display: flex;
-  margin-top: 50px;
+  margin: auto;
+  margin-top: calc(-1 * var(--work-list-set-gap));
   margin-left: calc(-1 * var(--work-list-set-gap));
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .section.job .item-list {
+  margin-top: var(--work-list-set-gap);
   margin-left: var(--work-list-set-gap);
   flex-basis: calc(100% / 3 - var(--work-list-set-gap));
 }
