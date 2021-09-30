@@ -37,6 +37,13 @@ img {
   display: block;
 }
 
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .title {
 font-weight: 700;
 font-size: 36px;
@@ -184,14 +191,7 @@ margin-bottom: 50px;
   letter-spacing: 0.03em;
 }
 
-.adress-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.adress-list .link {
+.adress-link {
   color: var(--adress-color);
 
   font-style: normal;
@@ -310,13 +310,6 @@ margin-bottom: 50px;
 .section-job .item-list {
   margin-left: var(--work-list-set-gap);
   flex-basis: calc(100% / 3 - var(--work-list-set-gap));
-}
-
-.list {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* ======TEAM====== */
