@@ -54,6 +54,17 @@ img {
   margin-bottom: 50px;
 }
 
+.title.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -282,15 +293,17 @@ img {
 }
 
 .section.pros .list {
+  margin: auto;
+  margin-top: calc(-1 * var(--work-list-set-gap));
+  margin-left: calc(-1 * var(--work-list-set-gap));
   display: flex;
+  flex-wrap: wrap;
 }
 
 .section.pros .list-item {
-  flex-basis: calc(100% / 4 - var(--work-list-set-gap));
-}
-
-.section.pros .list-item:not(:first-child) {
+  margin-top: var(--work-list-set-gap);
   margin-left: var(--work-list-set-gap);
+  flex-basis: calc(100% / 4 - var(--work-list-set-gap));
 }
 
 .section.pros .title {
@@ -433,17 +446,6 @@ img {
 
 .work-list .link {
   display: block;
-}
-
-.title.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
 }
 
 .work-list .item {
