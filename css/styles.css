@@ -386,11 +386,7 @@ margin-bottom: 50px;
 .button-list {
   display: flex;
   justify-content: center;
-  margin-top: 0;
   margin-bottom: 50px;
-  padding-left: 0;
-
-  list-style-type: none;
 }
 
 .button-list .button {
