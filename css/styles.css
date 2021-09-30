@@ -37,6 +37,17 @@ img {
   display: block;
 }
 
+.title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+
+margin-top: 0;
+margin-bottom: 50px;
+}
+
 .link {
   color: var(--primary-text-color);
 
@@ -290,7 +301,7 @@ img {
   padding-bottom: 94px;
 }
 
-.section-job .list {
+.job-list {
   display: flex;
   margin-top: 50px;
   margin-left: calc(-1 * var(--work-list-set-gap));
@@ -299,15 +310,6 @@ img {
 .section-job .item-list {
   margin-left: var(--work-list-set-gap);
   flex-basis: calc(100% / 3 - var(--work-list-set-gap));
-}
-
-.section-job .title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  margin-top: 0;
 }
 
 .list {
@@ -324,17 +326,6 @@ img {
 
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .team-list .title {
