@@ -366,8 +366,11 @@ img {
 }
 
 .team.list {
-  display: flex;
+  margin: auto;
+  margin-top: calc(-1 * var(--work-list-set-gap));
   margin-left: calc(-1 * var(--work-list-set-gap));
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .team-item {
@@ -375,8 +378,9 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  flex-basis: calc(100% / 4 - var(--work-list-set-gap));
+  margin-top: var(--work-list-set-gap);
   margin-left: var(--work-list-set-gap);
+  flex-basis: calc(100% / 4 - var(--work-list-set-gap));
 }
 
 .team.list .text {
