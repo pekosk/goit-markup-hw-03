@@ -163,7 +163,7 @@ img {
   color: var(--accent-colour);
 }
 
-.contacts-item {
+.contacts-item:not(:first-child) {
   margin-left: 50px;
 }
 
