@@ -238,6 +238,9 @@ img {
 
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
 
   padding-top: 200px;
