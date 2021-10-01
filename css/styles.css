@@ -163,6 +163,21 @@ p:last-child {
   margin-left: auto;
 }
 
+.contact-icon {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+ }
+
+ .tel-icon {
+   width: 10px;
+   height: 16px;
+ }
+
 .site-nav .link.current {
   color: var(--accent-colour);
 }
