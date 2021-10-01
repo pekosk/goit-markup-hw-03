@@ -346,7 +346,7 @@ p:last-child {
   flex-wrap: wrap;
 }
 
-.section.job .item-list {
+.job-list .item-list {
   margin-top: var(--work-list-set-gap);
   margin-left: var(--work-list-set-gap);
   flex-basis: calc(100% / 3 - var(--work-list-set-gap));
@@ -361,7 +361,7 @@ p:last-child {
   padding-bottom: 94px;
 }
 
-.team.list .title {
+.team-list .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -371,7 +371,7 @@ p:last-child {
   margin-bottom: 10px;
 }
 
-.team.list {
+.team-list {
   margin: auto;
   margin-top: calc(-1 * var(--work-list-set-gap));
   margin-left: calc(-1 * var(--work-list-set-gap));
@@ -389,7 +389,7 @@ p:last-child {
   flex-basis: calc(100% / 4 - var(--work-list-set-gap));
 }
 
-.team.list .text {
+.team-list .text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
